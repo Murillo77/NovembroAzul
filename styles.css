@@ -1,0 +1,581 @@
+/* Reset e Variáveis */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-dark: #1e3a5f;
+    --blue-medium: #2c5f8d;
+    --blue-light: #4a90c2;
+    --blue-very-light: #e6f2f8;
+    --blue-bg: #f0f7fa;
+    --white: #ffffff;
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --shadow-strong: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--blue-bg);
+    overflow-x: hidden;
+}
+
+/* Background decorative circles */
+body {
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* Decorative circles container */
+.decorative-circles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+    animation: float 20s infinite ease-in-out;
+}
+
+.circle-1 {
+    width: 300px;
+    height: 300px;
+    background: var(--blue-dark);
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.circle-2 {
+    width: 200px;
+    height: 200px;
+    background: var(--blue-medium);
+    top: 30%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+.circle-3 {
+    width: 250px;
+    height: 250px;
+    background: var(--blue-light);
+    top: 60%;
+    left: 15%;
+    animation-delay: 4s;
+}
+
+.circle-4 {
+    width: 180px;
+    height: 180px;
+    background: var(--blue-medium);
+    bottom: 20%;
+    right: 20%;
+    animation-delay: 1s;
+}
+
+.circle-5 {
+    width: 220px;
+    height: 220px;
+    background: var(--blue-dark);
+    top: 15%;
+    left: 50%;
+    animation-delay: 3s;
+}
+
+.circle-6 {
+    width: 160px;
+    height: 160px;
+    background: var(--blue-light);
+    bottom: 30%;
+    left: 5%;
+    animation-delay: 5s;
+}
+
+.circle-7 {
+    width: 280px;
+    height: 280px;
+    background: var(--blue-medium);
+    top: 50%;
+    right: 5%;
+    animation-delay: 2.5s;
+}
+
+.circle-8 {
+    width: 140px;
+    height: 140px;
+    background: var(--blue-dark);
+    bottom: 10%;
+    right: 40%;
+    animation-delay: 4.5s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(30px, -30px) scale(1.1);
+    }
+    50% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+    75% {
+        transform: translate(20px, 30px) scale(1.05);
+    }
+}
+
+/* Header */
+.header {
+    position: relative;
+    background: linear-gradient(135deg, var(--blue-medium) 0%, var(--blue-dark) 100%);
+    padding: 3rem 1rem;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ribbon {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: var(--blue-dark);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.ribbon-left {
+    top: -30px;
+    left: -30px;
+    transform: rotate(-45deg);
+}
+
+.ribbon-right {
+    top: -30px;
+    right: -30px;
+    transform: rotate(45deg);
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.title-novembro {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.title-azul {
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-left: -0.3em;
+    transform: translateY(-0.2em);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-slogan {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Main Content */
+.main-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem 0;
+}
+
+/* Sections */
+.section {
+    margin: 2rem 0;
+    padding: 3rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--shadow);
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-dark {
+    background: var(--blue-dark);
+    color: var(--text-light);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.section-light {
+    background: var(--blue-very-light);
+    color: var(--text-dark);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.section-light-alt {
+    background: var(--white);
+    color: var(--text-dark);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.section-final {
+    background: linear-gradient(135deg, var(--blue-very-light) 0%, var(--white) 100%);
+    color: var(--text-dark);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 2px solid var(--blue-light);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-dark .section-title {
+    color: var(--text-light);
+}
+
+.section-light .section-title,
+.section-light-alt .section-title {
+    color: var(--blue-dark);
+}
+
+.section-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.section-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Lists */
+.importance-list,
+.symptoms-list,
+.diagnosis-list,
+.prevention-list,
+.resources-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.importance-list li,
+.symptoms-list li,
+.diagnosis-list li,
+.prevention-list li,
+.resources-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.importance-list li::before,
+.symptoms-list li::before,
+.diagnosis-list li::before,
+.prevention-list li::before,
+.resources-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--blue-light);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.section-dark .importance-list li::before,
+.section-dark .diagnosis-list li::before,
+.section-dark .prevention-list li::before {
+    color: var(--blue-light);
+}
+
+.conclusion,
+.important,
+.highlight,
+.alert {
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid var(--blue-light);
+    background: rgba(74, 144, 194, 0.1);
+    border-radius: 5px;
+}
+
+.section-dark .conclusion,
+.section-dark .important,
+.section-dark .highlight {
+    border-left-color: var(--blue-light);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.alert {
+    border-left-color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+}
+
+/* Final Message */
+.final-message {
+    text-align: center;
+    font-size: 1.15rem;
+    line-height: 1.9;
+}
+
+.final-message p {
+    margin-bottom: 1.5rem;
+}
+
+.final-highlight {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+    padding: 1.5rem;
+    background: rgba(74, 144, 194, 0.15);
+    border-radius: 10px;
+    margin-top: 2rem !important;
+}
+
+/* Footer */
+.footer {
+    background: var(--blue-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem 1rem;
+    }
+
+    .header-title {
+        font-size: 2.5rem;
+    }
+
+    .title-azul {
+        font-size: 3rem;
+    }
+
+    .header-slogan {
+        font-size: 1.2rem;
+    }
+
+    .section {
+        margin: 1.5rem 0.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-content {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .final-highlight {
+        font-size: 1.1rem;
+    }
+
+    .ribbon {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Smaller circles on mobile */
+    .circle-1, .circle-3, .circle-5, .circle-7 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle-2, .circle-4 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-6, .circle-8 {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .title-novembro {
+        font-size: 2rem;
+    }
+
+    .title-azul {
+        font-size: 2.5rem;
+        margin-left: 0;
+        transform: translateY(0);
+    }
+
+    .header-slogan {
+        font-size: 1rem;
+    }
+
+    .section {
+        margin: 1rem 0.5rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .section-content {
+        font-size: 0.95rem;
+    }
+
+    .final-message {
+        font-size: 1rem;
+    }
+
+    .final-highlight {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    /* Even smaller circles on small mobile */
+    .circle-1, .circle-3, .circle-5, .circle-7 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle-2, .circle-4 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .circle-6, .circle-8 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .circle {
+        opacity: 0.1;
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section {
+        margin: 2rem 1rem;
+    }
+
+    .header-title {
+        font-size: 3rem;
+    }
+
+    .title-azul {
+        font-size: 3.5rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .section {
+        margin: 2.5rem auto;
+        max-width: 1100px;
+    }
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Print styles */
+@media print {
+    body::before {
+        display: none;
+    }
+
+    .decorative-circles {
+        display: none;
+    }
+
+    .section {
+        page-break-inside: avoid;
+        box-shadow: none;
+    }
+
+    .header {
+        page-break-after: avoid;
+    }
+}
+
