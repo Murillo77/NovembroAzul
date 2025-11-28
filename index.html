@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Novembro Azul - Campanha de conscientização sobre saúde masculina e prevenção do câncer de próstata">
     <title>Novembro Azul - Saúde Masculina</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Decorative Circles Background -->
@@ -20,118 +21,423 @@
         <div class="circle circle-8"></div>
     </div>
 
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <i class="fas fa-ribbon"></i>
+                    <span>Novembro Azul</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#importancia">Importância</a></li>
+                    <li><a href="#sintomas">Sintomas</a></li>
+                    <li><a href="#prevencao">Prevenção</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
     <!-- Header -->
     <header class="header">
         <div class="ribbon ribbon-left"></div>
         <div class="ribbon ribbon-right"></div>
         <div class="header-content">
-            <h1 class="header-title">
-                <span class="title-novembro">Novembro</span>
-                <span class="title-azul">Azul</span>
-            </h1>
-            <p class="header-slogan">Saúde masculina não pode ser tabu!</p>
+            <div class="header-text">
+                <h1 class="header-title">
+                    <span class="title-novembro">Novembro</span>
+                    <span class="title-azul">Azul</span>
+                </h1>
+                <p class="header-slogan">Saúde masculina não pode ser tabu!</p>
+                <p class="header-subtitle">Conscientização, prevenção e cuidado com a saúde do homem</p>
+                <a href="#sobre" class="cta-button">
+                    <span>Saiba Mais</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Section 1: O que é o Novembro Azul -->
-        <section class="section section-dark">
+        <!-- Statistics Section -->
+        <section class="stats-section" id="estatisticas">
             <div class="container">
-                <h2 class="section-title">O QUE É O NOVEMBRO AZUL?</h2>
-                <div class="section-content">
-                    <p>O Novembro Azul é uma campanha internacional de conscientização sobre a saúde do homem, com ênfase na prevenção e no diagnóstico precoce do câncer de próstata.</p>
-                    <p>Originou-se na Austrália, em 2003, como "Movember" (junção de "moustache" e "November"). A ideia inicial era que amigos deixassem crescer o bigode durante o mês de novembro para chamar atenção para a saúde masculina e o câncer de próstata.</p>
-                    <p>Com o tempo, o movimento se expandiu para abranger outras questões de saúde do homem, como saúde mental, doenças testiculares e doenças cardiovasculares.</p>
-                    <p>No Brasil, o Novembro Azul foi consolidado a partir de 2011 pelo Instituto Lado a Lado pela Vida e pela Sociedade Brasileira de Urologia, que passaram a promover campanhas focadas na saúde do homem.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-number">71.730</div>
+                        <div class="stat-label">Novos casos por ano no Brasil</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-number">2º</div>
+                        <div class="stat-label">Tipo de câncer mais comum entre homens</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Taxa de cura com diagnóstico precoce</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-number">45+</div>
+                        <div class="stat-label">Idade recomendada para exames</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: O que é o Novembro Azul -->
+        <section class="section section-dark" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-info-circle"></i>
+                        O QUE É O NOVEMBRO AZUL?
+                    </h2>
+                </div>
+                <div class="section-content-wrapper">
+                    <div class="section-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop" alt="Movember - Campanha de conscientização" loading="lazy">
+                    </div>
+                    <div class="section-content">
+                        <p>O <strong>Novembro Azul</strong> é uma campanha internacional de conscientização sobre a saúde do homem, com ênfase na prevenção e no diagnóstico precoce do câncer de próstata.</p>
+                        <p>Originou-se na <strong>Austrália, em 2003</strong>, como "Movember" (junção de "moustache" e "November"). A ideia inicial era que amigos deixassem crescer o bigode durante o mês de novembro para chamar atenção para a saúde masculina e o câncer de próstata.</p>
+                        <p>Com o tempo, o movimento se expandiu para abranger outras questões de saúde do homem, como saúde mental, doenças testiculares e doenças cardiovasculares.</p>
+                        <p>No <strong>Brasil</strong>, o Novembro Azul foi consolidado a partir de <strong>2011</strong> pelo Instituto Lado a Lado pela Vida e pela Sociedade Brasileira de Urologia, que passaram a promover campanhas focadas na saúde do homem.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section 2: Por que é importante -->
-        <section class="section section-light">
+        <section class="section section-light" id="importancia">
             <div class="container">
-                <h2 class="section-title">POR QUE O NOVEMBRO AZUL É IMPORTANTE?</h2>
-                <div class="section-content">
-                    <ul class="importance-list">
-                        <li>O câncer de próstata é o segundo tipo de câncer mais comum entre os homens no Brasil, perdendo apenas para o câncer de pele não melanoma.</li>
-                        <li>Estima-se que o Brasil tenha cerca de 71.730 novos casos por ano no triênio 2023-2025.</li>
-                        <li>Embora muitos tumores cresçam lentamente e não causem sintomas ou mortes, existem casos mais agressivos, especialmente em homens mais jovens ou com fatores de risco.</li>
-                        <li>A cura é muito mais provável com o diagnóstico precoce.</li>
-                        <li>Além do câncer, o Novembro Azul ajuda a quebrar tabus: incentiva os homens a cuidarem da saúde, falarem sobre o corpo, procurarem médicos e não adiarem os cuidados.</li>
-                    </ul>
-                    <p class="conclusion">Por isso, o Novembro Azul não é só sobre exames — é sobre conscientização, autocuidado e responsabilidade com a própria vida.</p>
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-exclamation-circle"></i>
+                        POR QUE O NOVEMBRO AZUL É IMPORTANTE?
+                    </h2>
+                </div>
+                <div class="importance-cards">
+                    <div class="importance-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Segundo Mais Comum</h3>
+                        <p>O câncer de próstata é o segundo tipo de câncer mais comum entre os homens no Brasil, perdendo apenas para o câncer de pele não melanoma.</p>
+                    </div>
+                    <div class="importance-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>71.730 Casos/Ano</h3>
+                        <p>Estima-se que o Brasil tenha cerca de 71.730 novos casos por ano no triênio 2023-2025.</p>
+                    </div>
+                    <div class="importance-card">
+                        <div class="card-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Casos Agressivos</h3>
+                        <p>Embora muitos tumores cresçam lentamente, existem casos mais agressivos, especialmente em homens mais jovens ou com fatores de risco.</p>
+                    </div>
+                    <div class="importance-card">
+                        <div class="card-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Diagnóstico Precoce</h3>
+                        <p>A cura é muito mais provável com o diagnóstico precoce, aumentando significativamente as chances de tratamento bem-sucedido.</p>
+                    </div>
+                    <div class="importance-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Quebra de Tabus</h3>
+                        <p>O Novembro Azul ajuda a quebrar tabus: incentiva os homens a cuidarem da saúde, falarem sobre o corpo e procurarem médicos.</p>
+                    </div>
+                </div>
+                <div class="conclusion-box">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Por isso, o Novembro Azul não é só sobre exames — é sobre conscientização, autocuidado e responsabilidade com a própria vida.</p>
                 </div>
             </div>
         </section>
 
         <!-- Section 3: Como identificar sinais -->
-        <section class="section section-light-alt">
+        <section class="section section-light-alt" id="sintomas">
             <div class="container">
-                <h2 class="section-title">COMO IDENTIFICAR SINAIS E QUANDO PROCURAR AJUDA?</h2>
-                <div class="section-content">
-                    <p>O câncer de próstata costuma ser silencioso no início, mas pode se manifestar com sintomas ao longo do tempo, como:</p>
-                    <ul class="symptoms-list">
-                        <li>Dificuldade para urinar</li>
-                        <li>Jato de urina fraco</li>
-                        <li>Vontade frequente de urinar</li>
-                        <li>Dor ou ardência ao urinar</li>
-                    </ul>
-                    <p>Em casos mais avançados, pode aparecer sangue na urina ou no sêmen, além de dores ósseas ou cansaço intenso.</p>
-                    <p class="alert">Se algum desses sintomas aparecer e persistir, a melhor atitude é procurar um urologista, pois apenas um profissional pode avaliar adequadamente a situação.</p>
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-stethoscope"></i>
+                        COMO IDENTIFICAR SINAIS E QUANDO PROCURAR AJUDA?
+                    </h2>
+                </div>
+                <div class="section-content-centered">
+                    <div class="section-content">
+                        <p class="intro-text">O câncer de próstata costuma ser <strong>silencioso no início</strong>, mas pode se manifestar com sintomas ao longo do tempo. Fique atento aos seguintes sinais:</p>
+                        <div class="symptoms-grid">
+                            <div class="symptom-item">
+                                <i class="fas fa-tint"></i>
+                                <h4>Dificuldade para urinar</h4>
+                            </div>
+                            <div class="symptom-item">
+                                <i class="fas fa-water"></i>
+                                <h4>Jato de urina fraco</h4>
+                            </div>
+                            <div class="symptom-item">
+                                <i class="fas fa-clock"></i>
+                                <h4>Vontade frequente de urinar</h4>
+                            </div>
+                            <div class="symptom-item">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <h4>Dor ou ardência ao urinar</h4>
+                            </div>
+                        </div>
+                        <div class="warning-box">
+                            <h4><i class="fas fa-exclamation-triangle"></i> Sintomas Avançados</h4>
+                            <p>Em casos mais avançados, pode aparecer sangue na urina ou no sêmen, além de dores ósseas ou cansaço intenso.</p>
+                        </div>
+                        <div class="alert-box">
+                            <i class="fas fa-user-md"></i>
+                            <div>
+                                <strong>Importante:</strong> Se algum desses sintomas aparecer e persistir, a melhor atitude é procurar um <strong>urologista</strong>, pois apenas um profissional pode avaliar adequadamente a situação.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section 4: Diagnóstico e tratamento -->
-        <section class="section section-dark">
+        <section class="section section-dark" id="diagnostico">
             <div class="container">
-                <h2 class="section-title">DIAGNÓSTICO E FORMAS DE TRATAMENTO</h2>
-                <div class="section-content">
-                    <p>Os exames mais comuns para diagnóstico são:</p>
-                    <ul class="diagnosis-list">
-                        <li><strong>PSA (exame de sangue):</strong> mede uma proteína produzida pela próstata.</li>
-                        <li><strong>Toque retal:</strong> permite ao médico avaliar o tamanho e a textura da próstata.</li>
-                    </ul>
-                    <p>Se forem encontradas alterações, pode ser solicitada uma biópsia para confirmar o câncer.</p>
-                    <p>As formas de tratamento variam conforme o estágio da doença e o estado de saúde do indivíduo. Podem ser indicadas cirurgia, radioterapia ou terapia hormonal. Para tumores de baixo risco, pode ser escolhido o acompanhamento cuidadoso e constante, sem intervenção imediata.</p>
-                    <p class="important">Todas as decisões devem ser tomadas em conjunto com um especialista.</p>
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-microscope"></i>
+                        DIAGNÓSTICO E FORMAS DE TRATAMENTO
+                    </h2>
+                </div>
+                <div class="section-content-centered">
+                    <div class="section-content">
+                        <h3 class="subsection-title">Exames de Diagnóstico</h3>
+                        <div class="exam-cards">
+                            <div class="exam-card">
+                                <div class="exam-icon">
+                                    <i class="fas fa-vial"></i>
+                                </div>
+                                <h4>PSA (Exame de Sangue)</h4>
+                                <p>Mede uma proteína produzida pela próstata. Valores elevados podem indicar a necessidade de investigação adicional.</p>
+                            </div>
+                            <div class="exam-card">
+                                <div class="exam-icon">
+                                    <i class="fas fa-hand-paper"></i>
+                                </div>
+                                <h4>Toque Retal</h4>
+                                <p>Permite ao médico avaliar o tamanho e a textura da próstata. Exame rápido e indolor que pode detectar alterações.</p>
+                            </div>
+                        </div>
+                        <p class="info-text">Se forem encontradas alterações, pode ser solicitada uma <strong>biópsia</strong> para confirmar o câncer.</p>
+                        
+                        <h3 class="subsection-title">Opções de Tratamento</h3>
+                        <div class="treatment-grid">
+                            <div class="treatment-item">
+                                <i class="fas fa-cut"></i>
+                                <span>Cirurgia</span>
+                            </div>
+                            <div class="treatment-item">
+                                <i class="fas fa-radiation"></i>
+                                <span>Radioterapia</span>
+                            </div>
+                            <div class="treatment-item">
+                                <i class="fas fa-pills"></i>
+                                <span>Terapia Hormonal</span>
+                            </div>
+                            <div class="treatment-item">
+                                <i class="fas fa-eye"></i>
+                                <span>Vigilância Ativa</span>
+                            </div>
+                        </div>
+                        <p class="info-text">As formas de tratamento variam conforme o estágio da doença e o estado de saúde do indivíduo. Para tumores de baixo risco, pode ser escolhido o acompanhamento cuidadoso e constante.</p>
+                        <div class="important-box">
+                            <i class="fas fa-handshake"></i>
+                            <p><strong>Todas as decisões devem ser tomadas em conjunto com um especialista.</strong></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section 5: Como cuidar e reduzir riscos -->
-        <section class="section section-dark">
+        <section class="section section-prevention" id="prevencao">
             <div class="container">
-                <h2 class="section-title">COMO CUIDAR E REDUZIR OS RISCOS</h2>
-                <div class="section-content">
-                    <p>Embora não exista uma forma garantida de prevenir o câncer de próstata, alguns hábitos podem ajudar significativamente:</p>
-                    <ul class="prevention-list">
-                        <li>Manter uma alimentação equilibrada</li>
-                        <li>Praticar exercícios físicos</li>
-                        <li>Evitar o consumo excessivo de álcool e o tabagismo</li>
-                        <li>Controlar o peso corporal</li>
-                    </ul>
-                    <p>Também é importante cuidar da saúde mental, pois estresse constante, má qualidade do sono e desequilíbrio emocional podem impactar negativamente o organismo.</p>
-                    <p class="highlight">O conselho mais importante é adotar uma postura preventiva e não esperar que os sintomas apareçam para buscar ajuda.</p>
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-shield-alt"></i>
+                        COMO CUIDAR E REDUZIR OS RISCOS
+                    </h2>
+                </div>
+                <div class="section-content-centered">
+                    <div class="section-content">
+                        <p class="intro-text">Embora não exista uma forma garantida de prevenir o câncer de próstata, alguns <strong>hábitos saudáveis</strong> podem ajudar significativamente:</p>
+                        <div class="prevention-grid">
+                            <div class="prevention-card">
+                                <div class="prevention-icon">
+                                    <i class="fas fa-apple-alt"></i>
+                                </div>
+                                <h4>Alimentação Equilibrada</h4>
+                                <p>Consuma frutas, verduras, legumes e evite alimentos processados. Uma dieta rica em licopeno (tomate) pode ser benéfica.</p>
+                            </div>
+                            <div class="prevention-card">
+                                <div class="prevention-icon">
+                                    <i class="fas fa-running"></i>
+                                </div>
+                                <h4>Exercícios Físicos</h4>
+                                <p>Pratique atividades físicas regularmente. Pelo menos 30 minutos por dia podem fazer a diferença.</p>
+                            </div>
+                            <div class="prevention-card">
+                                <div class="prevention-icon">
+                                    <i class="fas fa-ban"></i>
+                                </div>
+                                <h4>Evite Álcool e Tabaco</h4>
+                                <p>O consumo excessivo de álcool e o tabagismo aumentam os riscos. Modere ou elimine esses hábitos.</p>
+                            </div>
+                            <div class="prevention-card">
+                                <div class="prevention-icon">
+                                    <i class="fas fa-weight"></i>
+                                </div>
+                                <h4>Controle o Peso</h4>
+                                <p>Mantenha um peso saudável. A obesidade está relacionada a maior risco de câncer de próstata.</p>
+                            </div>
+                            <div class="prevention-card">
+                                <div class="prevention-icon">
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                                <h4>Qualidade do Sono</h4>
+                                <p>Durma bem. O sono adequado é essencial para a saúde geral e o sistema imunológico.</p>
+                            </div>
+                            <div class="prevention-card">
+                                <div class="prevention-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h4>Saúde Mental</h4>
+                                <p>Cuide da sua saúde mental. Estresse constante e desequilíbrio emocional podem impactar negativamente o organismo.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p><strong>O conselho mais importante:</strong> Adote uma postura preventiva e não espere que os sintomas apareçam para buscar ajuda. A prevenção é sempre o melhor remédio!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section 6: Informação confiável -->
-        <section class="section section-light-alt">
+        <section class="section section-light-alt" id="recursos">
             <div class="container">
-                <h2 class="section-title">INFORMAÇÃO CONFIÁVEL E PORTAIS PARA SE CONSULTAR</h2>
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-book-medical"></i>
+                        INFORMAÇÃO CONFIÁVEL E PORTAIS PARA SE CONSULTAR
+                    </h2>
+                </div>
                 <div class="section-content">
-                    <p>É fundamental buscar informações sobre saúde em fontes sérias e profissionais. Alguns recursos recomendados:</p>
-                    <ul class="resources-list">
-                        <li><strong>INCA (Instituto Nacional de Câncer):</strong> oferece informações claras e atualizadas sobre prevenção, diagnóstico e tratamento do câncer de próstata.</li>
-                        <li><strong>Portal do Ministério da Saúde:</strong> disponibiliza materiais oficiais sobre saúde do homem.</li>
-                        <li><strong>Instituto Vencer o Câncer:</strong> oferece materiais explicativos e educativos sobre câncer de próstata e outras doenças masculinas.</li>
-                        <li><strong>Hospitais particulares, serviços do SUS, clínicas e urologistas registrados:</strong> também oferecem consultas e orientações confiáveis.</li>
-                    </ul>
-                    <p>Histórias reais de outros homens que passaram por diagnóstico e tratamento podem ajudar a desmistificar o tema e mostrar que cuidar da saúde é um ato de coragem, não de fraqueza.</p>
-                    <p class="alert">Lembre-se: se os sintomas aparecerem e persistirem, procure um urologista.</p>
+                    <p class="intro-text">É fundamental buscar informações sobre saúde em <strong>fontes sérias e profissionais</strong>. Confira os recursos recomendados:</p>
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <h4>INCA</h4>
+                            <p class="resource-subtitle">Instituto Nacional de Câncer</p>
+                            <p>Oferece informações claras e atualizadas sobre prevenção, diagnóstico e tratamento do câncer de próstata.</p>
+                            <a href="https://www.inca.gov.br" target="_blank" rel="noopener" class="resource-link">
+                                Acessar site <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h4>Ministério da Saúde</h4>
+                            <p class="resource-subtitle">Portal Oficial</p>
+                            <p>Disponibiliza materiais oficiais sobre saúde do homem e políticas públicas de saúde.</p>
+                            <a href="https://www.gov.br/saude" target="_blank" rel="noopener" class="resource-link">
+                                Acessar site <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h4>Instituto Vencer o Câncer</h4>
+                            <p class="resource-subtitle">Educação e Apoio</p>
+                            <p>Oferece materiais explicativos e educativos sobre câncer de próstata e outras doenças masculinas.</p>
+                            <a href="https://www.vencerocancer.org.br" target="_blank" rel="noopener" class="resource-link">
+                                Acessar site <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <h4>Profissionais de Saúde</h4>
+                            <p class="resource-subtitle">SUS e Clínicas</p>
+                            <p>Hospitais particulares, serviços do SUS, clínicas e urologistas registrados oferecem consultas e orientações confiáveis.</p>
+                            <a href="#contato" class="resource-link">
+                                Buscar ajuda <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Histórias reais de outros homens que passaram por diagnóstico e tratamento podem ajudar a desmistificar o tema e mostrar que <strong>cuidar da saúde é um ato de coragem, não de fraqueza</strong>.</p>
+                    </div>
+                    <div class="alert-box">
+                        <i class="fas fa-bell"></i>
+                        <div>
+                            <strong>Lembre-se:</strong> Se os sintomas aparecerem e persistirem, procure um <strong>urologista</strong> imediatamente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h2>Agende sua Consulta</h2>
+                    <p>Se você tem 45 anos ou mais, ou possui fatores de risco (histórico familiar, obesidade ou pertence a grupos vulneráveis), este é o momento ideal para buscar orientação médica.</p>
+                    <div class="cta-buttons">
+                        <a href="https://www.gov.br/saude/pt-br/acesso-a-informacao/atendimento-a-cidadao" target="_blank" rel="noopener" class="cta-button-primary">
+                            <i class="fas fa-hospital"></i>
+                            Agendar pelo SUS
+                        </a>
+                        <a href="#recursos" class="cta-button-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            Mais Informações
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -140,21 +446,78 @@
         <section class="section section-final">
             <div class="container">
                 <div class="final-message">
-                    <p>Cuidar da saúde vai além de fazer exames — é sobre estar presente para si mesmo. Se você tem 45 anos ou mais, ou possui fatores de risco (como histórico familiar, obesidade ou pertence a grupos vulneráveis), este é o momento ideal para buscar orientação médica.</p>
-                    <p class="final-highlight">O Novembro Azul nos lembra que falar sobre saúde não deve ser tabu. É sobre viver mais, viver melhor e passar mais tempo com quem amamos.</p>
+                    <div class="final-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <p>Cuidar da saúde vai além de fazer exames — é sobre estar presente para si mesmo.</p>
+                    <p class="final-highlight">O Novembro Azul nos lembra que falar sobre saúde não deve ser tabu. É sobre <strong>viver mais, viver melhor</strong> e passar mais tempo com quem amamos.</p>
+                    <div class="social-share">
+                        <p>Compartilhe esta campanha:</p>
+                        <div class="share-buttons">
+                            <a href="#" class="share-btn" aria-label="Compartilhar no Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="share-btn" aria-label="Compartilhar no Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="share-btn" aria-label="Compartilhar no WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="share-btn" aria-label="Compartilhar no LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contato">
         <div class="container">
-            <p>&copy; 2024 Novembro Azul - Campanha de Conscientização sobre Saúde Masculina</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-ribbon"></i> Novembro Azul</h3>
+                    <p>Campanha de conscientização sobre saúde masculina e prevenção do câncer de próstata.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre a Campanha</a></li>
+                        <li><a href="#importancia">Por que é Importante</a></li>
+                        <li><a href="#sintomas">Sintomas</a></li>
+                        <li><a href="#prevencao">Prevenção</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="https://www.inca.gov.br" target="_blank" rel="noopener">INCA</a></li>
+                        <li><a href="https://www.gov.br/saude" target="_blank" rel="noopener">Ministério da Saúde</a></li>
+                        <li><a href="#recursos">Mais Recursos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergência</h4>
+                    <p class="emergency-number">
+                        <i class="fas fa-phone"></i>
+                        <strong>192</strong> - SAMU
+                    </p>
+                    <p class="emergency-number">
+                        <i class="fas fa-phone"></i>
+                        <strong>136</strong> - Disque Saúde
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Novembro Azul - Campanha de Conscientização sobre Saúde Masculina</p>
+                <p class="footer-note">Este site é apenas informativo. Sempre consulte um profissional de saúde para orientações médicas.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 
